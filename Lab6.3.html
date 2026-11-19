@@ -1,0 +1,36 @@
+<!--Question 03-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student's Grade</title>
+</head>
+<body>
+	<h1>Examination Grade</h1>
+
+	<p id="result"></p>
+
+	<script>
+		let mark=85;
+		let grade;
+
+		if (mark >= 80){
+			grade="A";
+		}
+		else if (mark >=70){
+			grade="B";
+		}
+		else if (mark>=60){
+			grade="C";
+		}
+		else if(mark>=50){
+			grade="D";
+		}
+		else {
+			grade ="F";
+		}
+
+		document.getElementById("result").innerHTML ="Student Mark:" + mark+ 
+		"<br>Student Grade: "+grade;
+	</script>
+</body>
+</html>

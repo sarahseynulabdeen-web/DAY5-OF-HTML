@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bookstore Discount</title>
+</head>
+<body>
+
+    <h2>Bookstore Discount Calculator</h2>
+
+    <p id="result"></p>
+
+    <script>
+        let purchase = 250;
+        let discount ;
+
+        if (purchase >= 200) {
+            discount = 20;
+        }
+        else if (purchase >= 100) {
+            discount = 10;
+        }
+        else {
+            discount = 0;
+        }
+
+        let discountAmount = purchase * discount / 100;
+
+        let finalPayment = purchase - discountAmount;
+
+        document.getElementById("result").innerHTML =
+        "Purchase Amount: RM" + purchase +
+        "<br>Discount: " + discount + "%" +
+        "<br>Discount Amount: RM" + discountAmount +
+        "<br>Final Payment: RM" + finalPayment;
+
+    </script>
+
+</body>
+</html>
